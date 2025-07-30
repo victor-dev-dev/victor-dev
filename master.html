@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr Bullish - Masterclass</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+  <!-- Header -->
+  <header class="p-4 flex justify-between items-center border-b border-gray-800">
+    <h1 class="text-2xl font-bold text-green-400">Mr Bullish</h1>
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <nav id="menu" class="hidden md:flex space-x-4">
+       <a href="Index.html" class="block hover:text-green-400">Home</a>
+    <a href="about.html" class="block hover:text-green-400">About</a>
+    <a href="master.html" class="block hover:text-green-400">Masterclass</a>
+    <a href="contact.html" class="block hover:text-green-400">Contact</a>
+    <a href="service.html" class="block hover:text-green-400">Service</a>
+    <a href="testimonial. html.html" class="hover:text-green-400">testimonials</a>    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+<a href="Index.html" class="block hover:text-green-400">Home</a>
+    <a href="about.html" class="block hover:text-green-400">About</a>
+    <a href="master.html" class="block hover:text-green-400">Masterclass</a>
+    <a href="contact.html" class="block hover:text-green-400">Contact</a>
+    <a href="service.html" class="block hover:text-green-400">Service</a>
+    <a href="testimonial. html.html" class="hover:text-green-400">testimonials</a>
+  </div>
+
+  <!-- Masterclass Section -->
+  <section class="py-20 px-4 max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-green-400 mb-6 text-center">Forex Masterclass 001</h2>
+    <p class="text-gray-300 text-lg leading-relaxed mb-8 text-center">
+      This course is designed for traders who want to master market structure, trading psychology, and profitable strategies. Learn step-by-step and access lifetime mentorship.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-2xl font-semibold text-green-300 mb-2">What You'll Learn:</h3>
+        <ul class="list-disc list-inside text-gray-400">
+          <li>Market Structure & Entry Models</li>
+          <li>Risk & Money Management</li>
+          <li>Trading Psychology</li>
+          <li>Smart Entries and Exit Plans</li>
+          <li>Using TradingView Like a Pro</li>
+          <li>Bonus: How to Use the MT5 Bot (Coming Soon)</li>
+        </ul>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-green-400 mb-2">Limited Offer</h3>
+        <p class="text-gray-300 mb-4">Original Price: <span class="line-through text-red-500">$100</span></p>
+        <p class="text-3xl font-bold text-green-400 mb-4">Now Only $60</p>
+        <a href="https://wa.me/2349039280789?text=Hi%20my%20name%20is%20__________%20I%20want%20to%20join%20%20your%20class" class="bg-green-500 px-6 py-3 rounded-full font-semibold hover:bg-green-600">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-6 border-t border-gray-800">
+    <p class="text-gray-500">&copy; 2025 Mr Bullish. All rights reserved.</p>
+    <div class="mt-2 space-x-4">
+      <a href="privacy.html" class="hover:text-green-400" class="text-gray-400 hover:text-green-400">Privacy</a>
+      <a href="terms.html" class="text-gray-400 hover:text-green-400">Terms</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+
